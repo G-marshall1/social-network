@@ -6,7 +6,7 @@ module.exports = {
   // Get all students
   async getUsers(req, res) {
     try {
-      const users = await Users.find();
+      const users = await User.find();
 
       res.json(users);
 
